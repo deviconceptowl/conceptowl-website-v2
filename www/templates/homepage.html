@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>ConceptOwl</title>
+				
+<link id="favicon" rel="shortcut icon" href="img/favicon.ico" sizes="16x16 32x32 48x48" type="image/png">
+
+<link rel="icon" href="img/favicon.ico" sizes="256x256" type="image/png">
+
+<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <link rel="manifest" href="manifest.json">
+
+    
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js?v=9.9" defer></script>
+
+</head>				
+		
+<body>
+
+<!-- HeaderBar -->
+	
+<div class="header">
+		<div class="row ">
+			<div class="col col-50 header-image">
+				<a >
+				<img src="img/logo_thumbc.png" alt="ConceptOwl">	
+				</a>
+			</div>
+			<div class="col col-50 header-options">
+			<ul class="row">											
+				<li ><button class="header-login">Log in</button></li>
+				<li ><button class="header-signup">Sign up</button></li>	
+			</ul>
+                        </div>
+		</div>
+</div>	
+		
+<!-- /HeaderBar -->
+
+<!-- HomePage -->						
+
+<div class="row">
+	<div class="col col-50">
+		<header class="home-text">
+			<h1 class="home-heading">Genuine Learning.<br> No Gimmicks</h1>	
+						   
+			<p class="home-content">ConceptOwl is the perfect learning app for independent or online-assisted learning for classes 8 to 12. Our programs are designed to be used by independent students, schools and coaching centers.</p>
+	
+			<div>
+				<p class="home-options">
+					<a class="home-option" onclick="goToStudents()">Students</a> 
+					<a class="home-option" onclick="goToSchools()">Schools </a>
+					<a class="home-option" onclick="goToCoaching()">Coaching Centers</a>
+				</p>
+
+                	  	<p><img src="img/app-store.svg" height="40" width="135" style="margin:0 10% 0 0;">
+			  	<img src="img/google-play.svg" height="40" width="136" style="margin:0 0 0 0;">
+				</p>
+
+			</div>
+		</header>	
+	</div>
+
+	<div class="col col-50" STYLE="margin-top:50px; margin-left:50px;" >
+				<img src="https://a.slack-edge.com/43f70/marketing/img/home/home_illo.png" srcset="https://a.slack-edge.com/43f70/marketing/img/home/home_illo.png 1x, https://a.slack-edge.com/43f70/marketing/img/home/home_illo@2x.png 2x" height="400px">
+	</div>	
+</div>
+
+<!-- /HomePage -->
+
+	
+</body>
+</html>

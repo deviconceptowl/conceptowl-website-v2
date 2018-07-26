@@ -1,1 +1,176 @@
-/* Empty. Add your own CSS if you like */
+body{
+ font-family:Averta;
+}
+
+.header{
+ margin-bottom:2%;
+}
+
+.header-image{
+ margin-left:5%;
+ height:42px;
+ width:42px;
+
+}
+
+.header-options{
+ margin-left:25%;
+}
+
+.header-login , .header-signup{
+ color: #0366d6 ;
+ font-size: 15px;
+ font-weight: 300;
+ background:none;
+}
+.header-login{
+ margin-right:25px;
+ border: 1px solid transparent;
+ padding-top: 10px;
+}
+
+.header-signup{
+ 
+ padding-top: 10px;
+ padding-bottom: 10px;
+ padding-left: 40px;
+ padding-right: 40px;
+ border: 0.5px solid #0366d6;
+ border-radius: 4px;
+}
+
+.home-text{
+margin-left:10%;
+}
+
+.home-content{
+color: #5b5e6d;
+font-size:1.5rem;
+font-family:Averta;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: normal;
+}
+
+.home-heading
+{
+    color: #323648;
+    font-family: Tiempos Headline Bold;
+    font-size: 76.8px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: normal;
+    margin-bottom: 2rem;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.home-options{
+ font-family:Averta;
+ color: #0366d6 ;
+ font-size: 20px;
+ font-weight: 600;
+ margin-bottom:5%;
+}
+
+.home-option{
+margin-right:5%;
+}
+.home-option:hover{
+ color:#144a87;
+ text-decoration:underline;
+ cursor:pointer;
+}
+
+
+/* Students */ 
+
+.student-row{
+ max-height :20%;
+}
+
+.student-column{
+ margin-left:15%;
+ max-width :30%;
+}
+
+.option-heading{
+ font-size:35px;
+ color: #323648;
+ font-family: Tiempos Headline Bold;
+ font-weight: 700;
+ line-height: 1.05;
+ letter-spacing: normal;
+ margin-top: 0;
+ text-align:center;
+}
+
+.student-header1 , .student-header2{
+ font-size:22px;
+ color: #323648;
+ font-family: Tiempos Headline SemiBold;
+ font-weight: 500;
+ line-height: 42px;
+ letter-spacing: normal;
+ margin-top: 0;
+}
+
+.student-content1 , .student-content2{
+ color: #8294A5;
+ font-size:18px;
+ font-weight: 500;
+ line-height: 1.5;
+ letter-spacing: normal;
+}
+
+/* Schools */
+
+.school-caption{
+margin:0 0 3% 0;
+}
+
+.school-description{
+ color: #8294A5;
+ font-size:22px;
+ font-weight: 500;
+ line-height: 1.5;
+ letter-spacing: normal;
+ text-align:center;
+ margin:2%;
+}
+
+.nav .nav-tabs{
+ color: #3f46ad;
+ font-size:17px;
+ font-weight: 700;
+ line-height: 1.5;
+ letter-spacing: normal;
+ text-align:center;
+}
+
+.tab-content{
+margin:5%;
+}
+
+.tab-content-text{
+ margin:3%;
+ max-width:40%;
+}
+
+.tab-content-heading{
+ font-size:22px;
+ color: #323648;
+ font-family: Tiempos Headline SemiBold;
+ font-weight: 500;
+ line-height: 42px;
+ letter-spacing: normal;
+ margin-top: 0;
+}
+
+.tab-content-data{
+ color: #8294A5;
+ font-size:18px;
+ font-weight: 500;
+ line-height: 1.5;
+ letter-spacing: normal;
+}
