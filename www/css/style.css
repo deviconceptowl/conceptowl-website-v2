@@ -1,9 +1,15 @@
 body{
+
  font-family:Averta;
+overflow-x:hidden;
+overflow-y: scroll; 
+max-height: 680px;  
 }
 
-.header{
- margin-bottom:2%;
+.header-bar{
+    top:0;
+ position: sticky;
+ background-color: white;
 }
 
 .header-image{
@@ -37,6 +43,12 @@ body{
  padding-right: 40px;
  border: 0.5px solid #0366d6;
  border-radius: 4px;
+}
+
+.homepage{
+    margin:2% 0 0 0;
+    padding-bottom: 10%;
+    border-bottom: 1px solid #ebebeb;
 }
 
 .home-text{
@@ -84,16 +96,21 @@ margin-right:5%;
 
 
 /* Students */ 
+.students{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #ebebeb;
+}
 
 .student-row{
  max-height :20%;
 }
 
 .student-column{
- margin-left:15%;
- max-width :30%;
+ margin-left:7%;
+ max-width :40%;
 }
-
 .option-heading{
  font-size:35px;
  color: #323648;
@@ -105,47 +122,107 @@ margin-right:5%;
  text-align:center;
 }
 
-.student-header1 , .student-header2{
+.option-description{
+ color: #8294A5;
  font-size:22px;
- color: #323648;
- font-family: Tiempos Headline SemiBold;
  font-weight: 500;
- line-height: 42px;
+ line-height: 1.5;
  letter-spacing: normal;
- margin-top: 0;
+ text-align:center;
+ margin:1% 2% 2% 2%;
 }
 
-.student-content1 , .student-content2{
+.option-content-heading{
+   font-size:27px;
+ color: #323648;
+ font-family: Tiempos Headline Bold;
+ font-weight: 700;
+ line-height: 42px;
+ letter-spacing: normal;
+ margin-top: 0; 
+}
+
+.option-content-text{
+ font-family:Averta;
  color: #8294A5;
  font-size:18px;
  font-weight: 500;
  line-height: 1.5;
  letter-spacing: normal;
+ text-align: justify;
 }
 
+
 /* Schools */
+
+.schools{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #ebebeb;
+}
+}
 
 .school-caption{
 margin:0 0 3% 0;
 }
 
-.school-description{
- color: #8294A5;
- font-size:22px;
- font-weight: 500;
- line-height: 1.5;
- letter-spacing: normal;
- text-align:center;
- margin:2%;
+.tab-icon{
+    filter: grayscale(1);
+    cursor: pointer;
+    display: block;
+    transition :filter 1s;
 }
 
-.nav .nav-tabs{
- color: #3f46ad;
- font-size:17px;
- font-weight: 700;
- line-height: 1.5;
- letter-spacing: normal;
- text-align:center;
+ 
+
+.tab-icon1{
+    margin-left: 70%;
+    margin-right: auto;
+}
+
+.tab-icon2{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-icon3{
+    margin-left: auto;
+    margin-right: 70%;
+}
+
+
+.tab-captions:after{
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto 0 auto; /* This will center the border. */
+    width: 60%; /* width */
+    border-bottom: 1px solid #ebebeb; /* This creates the border. */ 
+    padding-top:0px;
+} 
+
+.tab-caption{
+    font-family: Tiempos Headline SemiBold;
+    color: #5b5e6d;
+    font-size:17px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align:center;
+    text-decoration:none;
+    display: block;
+}
+ 
+.tab-caption1{
+  margin-left: 60%;
+  margin-right: 0;
+}
+.tab-caption2{
+ margin-left: auto;
+ margin-right: auto;
+}
+.tab-caption3{
+ margin-left: 0;
+ margin-right: 60%;
 }
 
 .tab-content{
@@ -157,20 +234,137 @@ margin:5%;
  max-width:40%;
 }
 
-.tab-content-heading{
- font-size:22px;
- color: #323648;
- font-family: Tiempos Headline SemiBold;
- font-weight: 500;
- line-height: 42px;
- letter-spacing: normal;
- margin-top: 0;
+.tab-image{
+ margin:0 1% 0 4%;
+ height:50px;
+ width:50px;
 }
 
-.tab-content-data{
- color: #8294A5;
- font-size:18px;
- font-weight: 500;
- line-height: 1.5;
- letter-spacing: normal;
+/* tab recolor */
+.nav-pills > li.active > a{
+    color: #3f46ad; !important;
+    border-bottom: 3px solid #eeb523;
+}
+
+.nav-pills > li:hover > a{
+    color: #3f46ad; !important;
+}
+
+
+.nav-pills > li.active > img {
+    filter: grayscale(0);
+}
+
+ .nav-pills > li:hover> img{
+    filter: grayscale(0);
+ }
+
+
+/* Coaching */
+
+.coaching{
+     padding-top: 5%;
+    padding-bottom: 5%; 
+    background-color: #F5F5F5; 
+    border-bottom: 1px solid #ebebeb;
+}
+
+.coaching-row{
+    margin:5%;
+   }
+
+.coaching-col-text1{
+    margin-top:10%;
+    margin-left:10%;
+    max-width: 30%;
+}
+
+.coaching-col-image1{
+    margin-left: 15%;
+    height:400px;
+    width:400px;
+}
+
+.coaching-col-text2{
+    margin-top:10%;
+    max-width: 30%;
+}
+
+.coaching-col-image2{
+    height:400px;
+    width:400px;
+    margin-left: 18%;
+}
+
+
+/* Testimonials */
+.testimonials{
+    padding-top: 5%;
+    padding-bottom: 5%; 
+    border-bottom: 1px solid #ebebeb;
+}
+
+
+.testimonial-box1 , .testimonial-box2{
+
+    box-shadow: 0 0 2rem rgba(0,0,0,.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    color: #6d6f7b;
+    width: 240px;
+    min-height: 150px;
+    padding: 1rem;
+    border: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    float: left;
+    transition: all 420ms ;
+
+   
+}
+
+.testimonial-box1{
+    margin-bottom: 100px;
+}
+
+.testimonial-box2{
+    margin-top: 100px;
+}
+
+.testimonial-box1:hover , .testimonial-box2:hover {
+  transform: scale(1.2);
+  opacity: .5;
+  cursor: pointer;
+}
+
+.marquee {
+  height:600px;
+  width: 1600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee--inner {
+  display: block;
+  width: 200%;
+  margin: 70px 0;
+  position: absolute;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee--inner:hover {
+  animation-play-state: paused;
+}
+
+span {
+  float: left;
+  width: 50%:
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
 }

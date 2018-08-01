@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>ConceptOwl</title>
+				
+<link id="favicon" rel="shortcut icon" href="img/favicon.ico" sizes="16x16 32x32 48x48" type="image/png">
+
+<link rel="icon" href="img/favicon.ico" sizes="256x256" type="image/png">
+
+<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <link rel="manifest" href="manifest.json">
+
+    
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js?v=9.9" defer></script>
+
+
+ 
+</head>
+<body>
+
+	
+<!-- HeaderBar -->
+	
+<div class="header">
+		<div class="row ">
+			<div class="col col-50 header-image">
+				<a >
+				<img src="img/logo_thumbc.png" alt="ConceptOwl">	
+				</a>
+			</div>
+			<div class="col col-50 header-options">
+			<ul class="row">											
+				<li ><button class="header-login">Log in</button></li>
+				<li ><button class="header-signup">Sign up</button></li>	
+			</ul>
+                        </div>
+		</div>
+</div>	
+		
+<!-- /HeaderBar -->
+
+<!-- Schools -->
+
+	<div class="school-caption">
+		<div class="option-heading">ConceptOwl For Schools</div>
+		  <p class="option-description">Power up your classes with our specially designed program.</p>
+	</div>
+
+<div class="container" ng-app="tabApp">
+  <div ng-controller="TabController">
+  	<div class="tab-captions">
+  		<ul class=" row nav nav-pills nav-stacked">
+       			<li  class="col col-33" ng-class="{ active: isSet(1) }">
+			
+			        <img class="tab-icon tab-icon1" src="img/1.png" ng-click="setTab(1)">
+          		<a class="tab-caption tab-caption1 " href ng-click="setTab(1)">Smarter Classrooms</a>
+			
+       			</li>
+       			<li class="col col-33" ng-class="{ active: isSet(2) }">
+			
+			        <img class="tab-icon tab-icon2" src="img/1.png" ng-click="setTab(2)">
+          		<a class="tab-caption tab-caption2" href ng-click="setTab(2)">Easy Revision</a>
+			
+       			</li>
+      		 	<li class="col col-33" ng-class="{ active: isSet(3) }">
+			
+			          <img class="tab-icon tab-icon3" src="img/1.png" ng-click="setTab(3)">
+          		  <a class="tab-caption tab-caption3" href ng-click="setTab(3)">Schedule Integration</a>
+			
+       			</li>
+     	</ul>
+	  </div>
+  	
+  		<div class="tab-content">
+       		<div ng-show="isSet(1)">
+			<div class="row" >
+				<div class="col col-50 tab-image"><img src="https://5.imimg.com/data5/KC/BC/MY-50228697/smart-class-2f-digital-podium-solution-500x500.jpg"></div>
+				<div class="col col-50 tab-content-text">
+      					<h3 class="option-content-heading">Make your smart classrooms smarter</h3>
+      					 <p class="option-content-text">A smart classroom gives students the best experience of digital learning. No matter where you are located, give your students instant access to the latest videos covering NCERT topics. </p>
+				</div>
+			</div>
+         	 
+        	</div>
+		<div ng-show="isSet(2)">
+          		<div class="row">	
+				<div class="col col-50 tab-image"><img src="https://cdn.shopify.com/s/files/1/2109/6913/articles/BLOG_IMAGE-03_1024x1024.jpg?v=1520404154" height="300" width="500"></div>
+				<div class="col col-50 tab-content-text">
+      					<h3 class="option-content-heading">Extra-Easy revision for students</h3>
+    					<p class="option-content-text">Give students instant access to the classroom, no matter where they are. Make revision super-easy and effective, and help your students score the best marks for board exams. </p>
+				</div>
+			</div>
+     		</div>
+        	<div ng-show="isSet(3)">
+         		<div class="row">
+				<div class="col col-50 tab-image"><img src="http://www.kaptest.com/blog/prep/wp-content/uploads/sites/21/2016/08/DAT-Study-Calendar.png" height="300" width="500"></div>
+				<div class="col col-50 tab-content-text">
+      					<h3 class="option-content-heading">Easily integrate with your current schedule</h3>
+      					<p class="option-content-text">Our program is flexible to be in sync with your academic schedule. We give you that extra boost wherever required.</p>
+				</div>
+			</div>
+     		</div>
+  </div>
+</div>
+
+  	
+
+<!-- /Schools -->
+  
+
+</body>
+</html>

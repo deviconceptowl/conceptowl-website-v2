@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
 <html>
+	   <!--ConceptOwl -->
+
+	<!--Author : Devi R  -->
 
 <head>
 
@@ -12,6 +15,7 @@
 
 <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="author" content="Devi R">
 
     <link rel="manifest" href="manifest.json">
 
@@ -33,17 +37,13 @@
     <!-- your app's js -->
     <script src="js/app.js?v=9.9" defer></script>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>				
+		
+<body ng-app="tabApp">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-	
 <!-- HeaderBar -->
 	
-<div class="header">
+<div class="header-bar">
 		<div class="row ">
 			<div class="col col-50 header-image">
 				<a >
@@ -61,60 +61,262 @@
 		
 <!-- /HeaderBar -->
 
-<!-- Schools -->
-
-
-
+<!-- HomePage -->						
+<div class="homepage">
+<div class="row">
+	<div class="col col-50">
+		<header class="home-text">
+			<h1 class="home-heading">Genuine Learning.<br> No Gimmicks</h1>	
+						   
+			<p class="home-content">ConceptOwl is the perfect learning app for independent or online-assisted learning for classes 8 to 12. Our programs are designed to be used by independent students, schools and coaching centers.</p>
 	
-  
-<div class="container">
-  	<div class="school-caption">
-		<div class="option-heading">ConceptOwl For Schools</div>
-		<p class="school-description">Power up your classes with our specially designed program.</p>
+			<div>
+				<p class="home-options">
+					<a class="home-option" href ng-click="goToOption(1)">Students</button> 
+					<a class="home-option" href ng-click="goToOption(2)">Schools </a>
+					<a class="home-option" href ng-click="goToOption(3)">Coaching Centers</a>
+				</p>
+
+                	  	<p><img src="img/app-store.svg" height="40" width="135" style="margin:0 10% 0 0;">
+			  	<img src="img/google-play.svg" height="40" width="136" style="margin:0 0 0 0;">
+				</p>
+
+			</div>
+		</header>	
 	</div>
 
-  	<ul class="nav nav-tabs">
-    		<li class="active col col-33"><a data-toggle="tab" href="#tab1"> Smarter Classrooms</a></li>
-   		<li class="col col-33"><a data-toggle="tab" href="#tab2">Easy Revision</a></li>
-   		<li class="col col-33"><a data-toggle="tab" href="#tab3">Schedule Integration</a></li>
-  	</ul>
+	<div class="col col-50" STYLE="margin-top:50px; margin-left:50px;" >
+				<img src="https://a.slack-edge.com/43f70/marketing/img/home/home_illo.png" srcset="https://a.slack-edge.com/43f70/marketing/img/home/home_illo.png 1x, https://a.slack-edge.com/43f70/marketing/img/home/home_illo@2x.png 2x" height="400px">
+	</div>	
+</div>
+</div>  
 
- 	<div class="tab-content">
-    		<div id="tab1" class="tab-pane fade in active ">
+
+<!-- /HomePage -->
+<!-- Students -->
+<div class="students" >
+	<div class="option-heading">ConceptOwl For Students</div>
+	<p class="option-description"></p>
+	<div class="row student-row">
+		<div class="col col-50 student-column">
 			<div class="row">
-				<div class="col col-50">1</div>
-				<div class="col col-50 tab-content-text">
-      					<h3 class="tab-content-heading">Make your smart classrooms smarter</h3>
-      					<p class="tab-content-data">A smart classroom gives students the best experience of digital learning. No matter where you are located, give your students instant access to the latest videos covering NCERT topics. </p>
+				<div class="col col-20">
+					<img class="student-icon" src="img/icon.png">
+				</div>
+				<div class="col col-80">
+					<div class="option-content-heading">Theory & Videos </div>
+					<p class="option-content-text"> Access study materials for all topics online and in offline mode. Videos by passionate faculty. You will feel like you are in an extremely interesting classroom.</p>
 				</div>
 			</div>
-    		</div>
-    		<div id="tab2" class="tab-pane fade ">
-			<div class="row">	
-				<div class="col col-50">2</div>
-				<div class="col col-50 tab-content-text">
-      					<h3 class="tab-content-heading">Extra-Easy revision for students</h3>
-    					<p class="tab-content-data">Give students instant access to the classroom, no matter where they are. Make revision super-easy and effective, and help your students score the best marks for board exams. </p>
-				</div>
-			</div>
-   	 	</div>
-    		<div id="tab3" class="tab-pane fade ">
+		</div>
+		<div class="col col-50 student-column">
 			<div class="row">
-				<div class="col col-50">3</div>
-				<div class="col col-50 tab-content-text">
-      					<h3 class="tab-content-heading">Easily integrate with your current schedule</h3>
-      					<p class="tab-content-data">Our program is flexible to be in sync with your academic schedule. We give you that extra boost wherever required.</p>
+				<div class="col col-20">
+					<img class="student-icon" src="img/icon.png">
+				</div>
+				<div class="col col-80">
+					<div class="option-content-heading"> Practice Questions</div>
+					<p class="option-content-text">A vast pool of questions grouped by difficulty level, question pattern, previous year question papers and more. More questions updated regularly. </p>
 				</div>
 			</div>
-    		</div>
-    
- 	</div>
+		</div>
+	</div>
+
+	<div class="row student-row">
+		<div class="col col-50 student-column" >
+			<div class="row">
+				<div class="col col-20">
+					<img class="student-icon" src="img/icon.png">
+				</div>
+				<div class="col col-80">
+					<div class="option-content-heading">Enforced Learning </div>
+					<p class="option-content-text">The main advantage of a classroom is enforcement of learning. Our online <b>Gold/Platinum</b> packages are designed just for this.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col col-50 student-column">
+			<div class="row">
+				<div class="col col-20">
+					<img class="student-icon" src="img/icon.png">
+				</div>
+				<div class="col col-80">
+					<div class="option-content-heading">Online Doubt Solving </div>
+					<p class="option-content-text">Have doubts? Have them cleared during our regular doubt solving sessions online.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row student-row">
+		<div class="col col-50 student-column">
+			<div class="row">
+				<div class="col col-20">
+					<img class="student-icon" src="img/icon.png">
+				</div>
+				<div class="col col-80">
+					<div class="option-content-heading">Online Test Series</div>
+					<p class="option-content-text">Our online test platform is in the <b>EXACT</b> format as  that prescribed by the CBSE board for JEE/NEET entrance exams. Practice >100 tests online, so that pn the exam day you are confident, calm and poised.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col col-50 student-column">
+			<div class="row">
+				<div class="col col-20">
+					<img class="student-icon" src="img/icon.png">
+				</div>
+				<div class="col col-80">
+					<div class="option-content-heading">Analytics</div>
+					<p class="option-content-text">Our analytics tell you how fast/slow you are. A good balance of speed/accuracy is what you need for good results.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 
 
 
+<!-- /Students -->
+
+<!-- Schools -->
+<div class="schools">
+	<div class="school-caption"> 
+		<div class="option-heading">ConceptOwl For Schools</div>
+		  <p class="option-description">Power up your classes with our specially designed program.</p>
+	</div>
+
+	<div class="container">
+  <div ng-controller="TabController">
+  	<div class="tab-captions">
+  		<ul class=" row nav nav-pills nav-stacked">
+       			<li  class="col col-33 tab-transition" ng-class="{ active: isSet(1) }">
+			
+			        <img class="tab-icon tab-icon1" src="img/1.png" ng-click="setTab(1)">
+          		<a class="tab-caption tab-caption1 " href ng-click="setTab(1)">Smarter Classrooms</a>
+			
+       			</li>
+       			<li class="col col-33 tab-transition" ng-class="{ active: isSet(2) }">
+			
+			        <img class="tab-icon tab-icon2" src="img/1.png" ng-click="setTab(2)">
+          		<a class="tab-caption tab-caption2" href ng-click="setTab(2)">Easy Revision</a>
+			
+       			</li>
+      		 	<li class="col col-33 tab-transition" ng-class="{ active: isSet(3) }">
+			
+			          <img class="tab-icon tab-icon3" src="img/1.png" ng-click="setTab(3)">
+          		  <a class="tab-caption tab-caption3" href ng-click="setTab(3)">Schedule Integration</a>
+			
+       			</li>
+     	</ul>
+	  </div>
+  	
+  		<div class="tab-content">
+       		<div ng-show="isSet(1)">
+			<div class="row" >
+				<div class="col col-50 tab-image"><img src="https://5.imimg.com/data5/KC/BC/MY-50228697/smart-class-2f-digital-podium-solution-500x500.jpg"></div>
+				<div class="col col-50 tab-content-text">
+      					<h3 class="option-content-heading">Make your smart classrooms smarter</h3>
+      					 <p class="option-content-text">A smart classroom gives students the best experience of digital learning. No matter where you are located, give your students instant access to the latest videos covering NCERT topics. </p>
+				</div>
+			</div>
+         	 
+        	</div>
+		<div ng-show="isSet(2)">
+          		<div class="row">	
+				<div class="col col-50 tab-image"><img src="https://cdn.shopify.com/s/files/1/2109/6913/articles/BLOG_IMAGE-03_1024x1024.jpg?v=1520404154" height="300" width="500"></div>
+				<div class="col col-50 tab-content-text">
+      					<h3 class="option-content-heading">Extra-Easy revision for students</h3>
+    					<p class="option-content-text">Give students instant access to the classroom, no matter where they are. Make revision super-easy and effective, and help your students score the best marks for board exams. </p>
+				</div>
+			</div>
+     		</div>
+        	<div ng-show="isSet(3)">
+         		<div class="row">
+				<div class="col col-50 tab-image"><img src="http://www.kaptest.com/blog/prep/wp-content/uploads/sites/21/2016/08/DAT-Study-Calendar.png" height="300" width="500"></div>
+				<div class="col col-50 tab-content-text">
+      					<h3 class="option-content-heading">Easily integrate with your current schedule</h3>
+      					<p class="option-content-text">Our program is flexible to be in sync with your academic schedule. We give you that extra boost wherever required.</p>
+				</div>
+			</div>
+     		</div>
+        </div>
+	</div>
+	</div>
+</div>
+  	
+
 <!-- /Schools -->
+
+<!-- Coaching Centers -->
+
+<div class="coaching">
+	<div class="coaching-caption">
+		<div class="option-heading">ConceptOwl For Coaching Centers</div>
+		  <p class="option-description">Lower instructor dependencies and focus on delivering real values to students.<br> Specially designed for tier 2/3 coaching centers.</p>
+	</div>
+
+	<div class="row coaching-row">
+			<div class="col col-50 coaching-col-text1">
+				<h3 class="option-content-heading">Great value with minimum instructor support</h3>
+      			<p class="option-content-text">We understand the pain of having to rely completely on instructors to deliver a great coaching program. Regardless of where you are located, you now have access to videos of top instructors, designed for NCERT and entrance coverage. No more losing sleep over instructor turnover.</p>
+      		</div>
+      		<div class="col col-50"><img class="coaching-col-image1" src="img/coaching.png"></div>
+    </div>
+
+	<div class="row coaching-row">
+			<div class="col col-50 "><img class="coaching-col-image2" src="img/coach.png"></div>
+			<div class="col col-50 coaching-col-text2">
+				<h3 class="option-content-heading">Vast pool of questions and online test series.</h3>
+      			<p class="option-content-text">The world is moving online. Are you? Now JEE/NEET exams are being conducted online. So you have to give the students the means to practice. Choose from 100's of tests in our platform, so that students gain the confidence to attend the tests online. </p>
+      		</div>
+    </div>
+
+    <div class="row coaching-row">
+      		<div class="col col-50 coaching-col-text1">
+				<h3 class="option-content-heading">Location no longer a constraint</h3>
+      			<p class="option-content-text"></p>
+      		</div>
+      		<div class="col col-50 "><img class="coaching-col-image1" src="img/coaching.png"></div>
+    </div>
+
+    <div class="row coaching-row">
+    		<div class="col col-50 "><img class="coaching-col-image2" src="img/coach.png"></div>
+      		<div class="col col-50 coaching-col-text2">
+				<h3 class="option-content-heading">Powerful Instructor Dashboard </h3>
+      			<p class="option-content-text">You can create your own tests, assign to students,track performance.</p>	
+  			</div>
+  	</div>
+</div>
+
+
+<!-- /Coaching Centers -->
+
+<!-- Testimonials-->
+<div class="testimonials">
+	<div class="option-heading">Testimonials</div>
+
+
+<div class="marquee">
+  <div class="marquee--inner">
+    <span>
+      <div class="testimonial-box1"></div><div class=" testimonial-box2"></div><div class="testimonial-box1"></div><div class=" testimonial-box2"></div><div class="testimonial-box1"></div>
+    <span>
+      <div class="testimonial-box2"></div><div class="testimonial-box1"></div><div class="testimonial-box2"></div><div class=" testimonial-box1"></div><div class="testimonial-box2">
+    </span>
+
+  </div>
+</div>
+
+</div>
+
+
+
+
+<!-- /Testimonials-->
+
+
+
 	
 </body>
 </html>
